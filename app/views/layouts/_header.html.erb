@@ -3,9 +3,17 @@
     <a href="/">-Ura-</a>
   </h1>
   <nav class="Ura">
-    <ul>
-      <li><a href="#"> ここに右上の必要項目 </a></li>
-      <li><a href="#"> about的なw </a></li>
-      <li><a href="#"> homeもあってもいいかも </a></li>
-
+ <header class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <%= link_to "Ura", '#', id: "logo" %>
+        <nav>
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "Home",  root_path %></li>
+            <li><%= link_to "Help",   help_path %></li>
+            <li><%= link_to "Login", users_path %></li>
+          </ul>
+        </nav>
+      </div>
 </header>
+
+    
