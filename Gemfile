@@ -6,6 +6,7 @@ ruby "3.2.4"
 
 gem "rails",           "7.0.4.3"
 gem "bootstrap-sass",  "3.4.1"
+gem "bcrypt",          "3.1.18"
 
 
 gem "sassc-rails",     "2.1.2"
