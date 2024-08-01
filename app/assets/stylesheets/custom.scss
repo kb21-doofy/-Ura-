@@ -33,6 +33,17 @@ $light-gray: hsl(188, 82%, 56%);
     text-decoration: none;
   }
 }
+
+// 背景画像
+
+.cat {
+  background-image: url(../img/cat1.jpg); /* 背景の場所を指定する */
+  background-size: cover;                 /* 繰り返し表示を防ぐ */
+  width: 300px;
+  height: 500px;                         /* 幅と高さを指定する */
+}
+
+
 /* header */
 
 #logo {
@@ -62,6 +73,7 @@ $light-gray: hsl(188, 82%, 56%);
   padding-top: 16px;
   font-weight: bold;
 }
+
 
 /* footer */
 
@@ -94,7 +106,7 @@ $light-gray: hsl(180, 48%, 37%);
 
 .button1{
   display: block;
-  width: 600px;
+  width: 450px;
   height: 150px;
   text-decoration: none;
   background: #a0cce3;;
@@ -112,12 +124,20 @@ $light-gray: hsl(180, 48%, 37%);
 
 // button2 //
 
+//背景
+
 
 /* universal */
 // Home //
 
 body {
+  margin: 100px;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://www.google.com/maps/uv?pb=!1s0x60188cb79a4c26e5%3A0x8fca893849103f73!3m1!7e164!15sCgIgAQ&hl=ja&viewerState=ga&cr=ll_a7&imagekey=!1e10!2sAF1QipNoz1M83HSQW_UakKEYA_M0qXqxGP4WRu3K9E0L");
   padding-top: 120px;
+  background-repeat: no-repeat;
+  background-position:50% 50%;
 }
 
 section {
@@ -139,31 +159,52 @@ textarea {
 // home //
 .home
 
-.center {
-  text-align: center;
+
   h1 {
     margin-bottom: 10px;
   } 
-}
 
 
 h1{
-  font-weight: 1px;
+  font-weight: 1px; //Welcome to the -Ura-
   text-align: center;
   
 }
 
 h2{
   font-size: 15px;
-  text-align: center;
+  text-align: center; //This is the home page for the -Ura- sample application.
+
 
 }
 h3{
   font-size: xx-large;
+  border-radius: 90px;  // Tourist
+  text-align: center;
+}
+
+h6{
+  font-size: xx-large; // local
   border-radius: 90px;
-  
+  text-align: center; 
+
 }
 
 h4{
-  font-size: xx-small;
+  font-size: xx-small;  //※ログインがお済みではない場合ログインページに移動します。
+ }
+
+h7{
+  font-size: xx-small;  //※ログイン済みの方は各一覧ページに移動します
+  padding-bottom: 90px;
+  padding-top: 0px;
 }
+
+h5{ 
+  padding-top: 40px;
+  text-align: center;  // sign up now !
+}
+
+
+
+
