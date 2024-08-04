@@ -6,31 +6,33 @@
     Welcome to the -Ura-
 </h1>
 <h2>
-    This is the home page for the
-    <a href="https://railstutorial.jp/">-Ura-</a>
-    sample application.
+
+『-Ura-とは、訪日する外国人観光客と、地元を案内をしたいという人がマッチングすることを目的としております』
+
 </h2>
+
+<h8>
+    ⚫️無料で英語を話せる環境を作りたい
+    ⚫️良い案内にはチップが貰えるかも
+    ⚫️グループ同士でも繋がれる
+    ⚫️地域のUraの魅力を知っている方
+</h8>
+<h4>
+※ログインがお済みではない場合ログインページに移動します。※ログイン済みの方は各一覧ページに移動します
+</h4>
 
 <h3>
     
-    <%= link_to "Tourist", "#" , class: "button1" %>
+    <%= link_to "✈️Tourist", users_path , class: "button1" %>
 </h3>
 <h6>
-    <%= link_to "Local", '#', class: "button1" %>
+    <%= link_to "🚖 Local", users_path, class: "button1" %>
 </h6>
-
-<h4>
-※ログインがお済みではない場合ログインページに移動します。
-</h4>
-
-<h7>
-※ログイン済みの方は各一覧ページに移動します
-</h７>
-
 <h5>
- <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+ <%= link_to "Sign up now!", new_user_path, class: "btn btn-lg btn-primary" %>
 
 </h5>
+
 </div>
 
 

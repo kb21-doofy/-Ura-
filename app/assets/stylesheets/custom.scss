@@ -34,6 +34,8 @@ $light-gray: hsl(188, 82%, 56%);
   }
 }
 
+
+
 // 背景画像
 
 .cat {
@@ -77,9 +79,18 @@ $light-gray: hsl(188, 82%, 56%);
 
 /* footer */
 
+.content {
+  min-height: calc(40vh - 15px);
+}
+
 footer {
-  margin-top: 45px;
-  padding-top: 5px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #f4e7f6;
+  margin-top: 200px;
+  padding-top: 0px;
 $light-gray: hsl(180, 48%, 37%);
   border-top: 1px solid $gray-light;
   color: $gray-light;
@@ -89,15 +100,16 @@ $light-gray: hsl(180, 48%, 37%);
       color: $gray-darker;
     }
   }
+  
   small {
     float: left;
   }
   ul {
-    float: right;
     list-style: none;
     li {
+      font-style: italic;  // ここでfooter文字編集
       float: left;
-      margin-left: 15px;
+      margin: 0px 1px;
     }
   }
 }
@@ -122,16 +134,14 @@ $light-gray: hsl(180, 48%, 37%);
   margin: 50px 10px 10px;
 }
 
-// button2 //
 
-//背景
 
 
 /* universal */
 // Home //
 
 body {
-  margin: 100px;
+   margin: 50px;
   width: 100vw;
   height: 100vh;
   background-image: url("https://www.google.com/maps/uv?pb=!1s0x60188cb79a4c26e5%3A0x8fca893849103f73!3m1!7e164!15sCgIgAQ&hl=ja&viewerState=ga&cr=ll_a7&imagekey=!1e10!2sAF1QipNoz1M83HSQW_UakKEYA_M0qXqxGP4WRu3K9E0L");
@@ -170,41 +180,51 @@ h1{
   text-align: center;
   
 }
+body {
+  background-size: cover;
+background-image: url(https://media.cntraveler.com/photos/62ab85a86df361f5801fd45b/16:9/w_1600%2Cc_limit/Tokyo_GettyImages-1319747119.jpg);
+
+}
+
 
 h2{
+  padding-top: 60px;
   font-size: 15px;
   text-align: center; //This is the home page for the -Ura- sample application.
-
-
-}
-h3{
-  font-size: xx-large;
-  border-radius: 90px;  // Tourist
-  text-align: center;
-}
-
-h6{
-  font-size: xx-large; // local
-  border-radius: 90px;
-  text-align: center; 
 
 }
 
 h4{
   font-size: xx-small;  //※ログインがお済みではない場合ログインページに移動します。
+  text-align: center; 
  }
 
-h7{
-  font-size: xx-small;  //※ログイン済みの方は各一覧ページに移動します
-  padding-bottom: 90px;
-  padding-top: 0px;
+
+
+h3{
+  font-size: xx-large;
+  border-radius: 90px;  // Tourist
+  text-align: center;
+  padding-left: 300px;
 }
 
+h6{
+  font-size: xx-large; // local
+  border-radius: 90px;
+  padding-left: 300px;
+  text-align: center;
+}
+
+
+
 h5{ 
-  padding-top: 40px;
   text-align: center;  // sign up now !
 }
 
+h8{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: large;
+}
 
 /* miscellaneous */
 
@@ -255,3 +275,103 @@ h5{
     }
   }
 }
+
+/* sidebar */
+
+aside {
+  section.user_info {
+    margin-top: 20px;
+  }
+  section {
+    padding: 10px 0;
+    margin-top: 20px;
+    &:first-child {
+      border: 0;
+      padding-top: 0;
+    }
+    span {
+      display: block;
+      margin-bottom: 3px;
+      line-height: 1;
+    }
+    h1 {
+      font-size: 1.4em;
+      text-align: left;
+      letter-spacing: -1px;
+      margin-bottom: 3px;
+      margin-top: 0px;
+    }
+  }
+}
+
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
+
+.gravatar_edit {
+  margin-top: 15px;
+}
+
+/* forms */
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
+  }
+}
+/* microposts */
+
+.microposts {
+  list-style: none;
+  padding: 0;
+  li {
+    padding: 10px 0;
+    border-top: 1px solid #e8e8e8;
+  }
+  .user {
+    margin-top: 5em;
+    padding-top: 0;
+  }
+  .content {
+    display: block;
+    margin-left: 60px;
+    img {
+      display: block;
+      padding: 5px 0;
+    }
+  }
+  .timestamp {
+    color: $gray-light;
+    display: block;
+    margin-left: 60px;
+  }
+  .gravatar {
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+}
+
+aside {
+  textarea {
+    height: 100px;
+    margin-bottom: 5px;
+  }
+}
+
+span.image {
+  margin-top: 10px;
+  input {
+    border: 0;
+  }
+}
+
